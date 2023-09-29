@@ -1,43 +1,46 @@
-import HamburgerMenu from "../components/HamburgerMenu";
+import { useState } from "react";
+import HamburgerMenu from "../components/Navbar/HamburgerMenu";
+import MobileNav from "../components/Navbar/MobileNav";
 import logo from "../images/logo_dark.svg";
 
 const Navbar = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	return (
-		<header className=" p-4 md:px-8 md:py-5 lg:pt-6 xl:px-12 border-2 border-b-grey-100">
+		<header className=" p-4 md:px-8 md:py-[18px] xl:px-12 border-2 border-b-grey-100 lg:py-[17px] lg:border-[3px]">
 			<nav className=" relative container mx-auto  md:flex md:items-center md:justify-between">
 				<div className="flex items-center justify-between">
 					<div>
 						<img src={logo} alt="logo" />
 					</div>
-					<HamburgerMenu />
+					<HamburgerMenu
+						isMenuOpen={isMenuOpen}
+						setIsMenuOpen={setIsMenuOpen}
+					/>
 				</div>
-				<div className="hidden md:block">
-					<a className="p-2 px-3" href="#features">
+				<div className="hidden md:block space-x-4 text-base font-workSans font-medium">
+					<a
+						className="p-2 px-3 hover:bg-grey-100 rounded-md transition-colors"
+						href="#features"
+					>
 						Features
 					</a>
-					<a className="p-2 px-3" href="#how_it_works">
-						How it Works
+					<a
+						className="p-2 px-3 hover:bg-grey-100 rounded-md transition-colors"
+						href="#how_it_works"
+					>
+						How It Works
 					</a>
 				</div>
 				<a
-					className="hidden md:inline-block p-2 px-3 text-primary font-bold"
+					className="hidden md:inline-block p-2 px-3 text-primary font-semibold text-sora text-lg hover:bg-grey-100 rounded-md transition-colors"
 					href="#"
 				>
 					Get Started
 				</a>
-				<div className="absolute right-4 py-2 px-3 w-36 bg-white flex flex-col rounded-md shadow-[0px_0px_10px_-1px] shadow-black/10 top-12 text-sm space-y-1">
-					<div className="border-b-2 pb-2 border-grey-100 flex flex-col space-y-1">
-						<a className="" href="#features">
-							Features
-						</a>
-						<a className="" href="#how_it_works">
-							How it Works
-						</a>
-					</div>
-					<a className="text-primary font-bold" href="#">
-						Get Started
-					</a>
-				</div>
+				<MobileNav
+					isMenuOpen={isMenuOpen}
+					setIsMenuOpen={setIsMenuOpen}
+				/>
 			</nav>
 		</header>
 	);
