@@ -18,9 +18,8 @@ const Hero = () => {
 						videos on how to get things done on a website.
 					</p>
 					<a
-						href="/public/helpmeout-chrome-extension.zip"
+						href="https://drive.google.com/file/d/1ybC2reHiGyFG3oy7l--zlPulWxb2-uJM/view?usp=sharing"
 						className="flex items-center w-fit text-white px-6 py-3 font-workSans font-medium bg-primary space-x-[10px] rounded-lg text-base mt-8 hover:space-x-4 lg:px-6 lg:py-5 lg:text-lg lg:mt-12"
-						download="helpmeout-chrome-extension.zip"
 					>
 						<span>Install HelpMeOut</span>
 						<div className="transition-all">
