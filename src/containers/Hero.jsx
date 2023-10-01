@@ -4,6 +4,7 @@ import heroImg3 from "../images/hero-img_3.png";
 import arrowRight from "../images/arrow-right.svg";
 import dottedSquare1 from "../images/dotted-square_1.svg";
 import dottedSquare2 from "../images/dotted-square_2.svg";
+import chromeExtensionZip from "../../helpmeout-chrome-extension.zip";
 
 const Hero = () => {
 	return (
@@ -18,7 +19,7 @@ const Hero = () => {
 						videos on how to get things done on a website.
 					</p>
 					<a
-						href="../../helpmeout-chrome-extension.zip"
+						href={chromeExtensionZip}
 						className="flex items-center w-fit text-white px-6 py-3 font-workSans font-medium bg-primary space-x-[10px] rounded-lg text-base mt-8 hover:space-x-4 lg:px-6 lg:py-5 lg:text-lg lg:mt-12"
 						download
 					>
