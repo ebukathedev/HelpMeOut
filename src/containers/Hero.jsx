@@ -18,7 +18,7 @@ const Hero = () => {
 						videos on how to get things done on a website.
 					</p>
 					<a
-						href="https://drive.google.com/file/d/1ybC2reHiGyFG3oy7l--zlPulWxb2-uJM/view?usp=sharing"
+						href="https://drive.google.com/file/d/1IwWuwzjYF6YbNij6rd0Pxohs038fJRA0/view?usp=drive_link"
 						className="flex items-center w-fit text-white px-6 py-3 font-workSans font-medium bg-primary space-x-[10px] rounded-lg text-base mt-8 hover:space-x-4 lg:px-6 lg:py-5 lg:text-lg lg:mt-12"
 					>
 						<span>Install HelpMeOut</span>
